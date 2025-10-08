@@ -1,23 +1,23 @@
 class Powertools < Formula
   desc "Code indexing and navigation tools for AI agents"
   homepage "https://github.com/zachswift615/agent-power-tools"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-macos-arm64.tar.gz"
-      sha256 "a4e51e9855a48be0f2ff9336624eacc86ed552fb188935870cfe41bcddb5a3dd"
+      sha256 "4ae91e92665ad9504c97021032d83d954a1359302c14eb118211de6b7cd5aad2"
     else
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-macos-x86_64.tar.gz"
-      sha256 "0f0261402c33838af8557e69f04aac3940fa7fecc55944ae45e8504997c0d554"
+      sha256 "4bb75333926a402feff2e9a9f0647d53c7cac02bfe4cad4a8b02a606a79e942b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-linux-x86_64.tar.gz"
-      sha256 "87a7fa58c9815c7e791e3704cf123fb78431d903b3359a7834deea17ede643ac"
+      sha256 "2512c8aed68032bfa94ff8f3909ab4f74bbfcf0f34e2981c296ae7c97fec0ede"
     end
   end
 
