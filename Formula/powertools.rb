@@ -29,17 +29,18 @@ class Powertools < Formula
     <<~EOS
       Powertools has been installed!
 
-      To use as an MCP server with Claude Code, add this to ~/.config/claude/mcp_settings.json:
+      To use as an MCP server with Claude Code, create a .mcp.json file at your project root:
 
       {
         "mcpServers": {
           "powertools": {
             "command": "#{bin}/powertools",
-            "args": ["--mcp-server"],
-            "description": "Semantic code navigation and analysis tools"
+            "args": ["--mcp-server"]
           }
         }
       }
+
+      Then restart Claude Code. The .mcp.json file can be committed to git for team collaboration.
 
       For more information, see: https://github.com/zachswift615/agent-power-tools
     EOS
