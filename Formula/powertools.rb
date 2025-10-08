@@ -7,17 +7,17 @@ class Powertools < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-macos-arm64.tar.gz"
-      sha256 "REPLACE_WITH_ARM64_SHA256"
+      sha256 "a4e51e9855a48be0f2ff9336624eacc86ed552fb188935870cfe41bcddb5a3dd"
     else
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-macos-x86_64.tar.gz"
-      sha256 "REPLACE_WITH_X86_64_SHA256"
+      sha256 "0f0261402c33838af8557e69f04aac3940fa7fecc55944ae45e8504997c0d554"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/zachswift615/agent-power-tools/releases/download/v#{version}/powertools-linux-x86_64.tar.gz"
-      sha256 "REPLACE_WITH_LINUX_SHA256"
+      sha256 "87a7fa58c9815c7e791e3704cf123fb78431d903b3359a7834deea17ede643ac"
     end
   end
 
